@@ -1,0 +1,24 @@
+---
+layout: default
+title: It is a sample Jekyll page containing some of my trails in drawing and comics.
+---
+<section class = "w3-container">
+	<div class="w3-row-padding">
+
+	{% for collection in site.collections %}
+
+		{% if collection.label contains 'posts' %}
+		{% else %}
+		 <div class="w3-third">
+			<h2  style="color:green;">{{ collection.label | replace: "_", " "}}</h2>
+			{% for item in site[collection.label] reversed limit:1 %}
+				<a href="{{item.url}}" >
+					<img src="{{ site.baseurl }}/assets/images/{{ item.src }}" width="300" height="500" class="w3-hover-opacity">
+				</a>				
+			{% endfor %}
+		 </div>
+		{% endif %}
+  {% endfor %}			
+	</div>
+</section>
+				

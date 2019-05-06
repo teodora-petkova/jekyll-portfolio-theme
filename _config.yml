@@ -1,0 +1,16 @@
+title: The green place
+email: 
+
+baseurl:
+url: / #Leave this, change the baseurl.
+
+destination: _site
+
+collections:
+  My_first_comics:
+    output: true
+  Coincidence:
+    output: true
+  Sketches:
+    output: true
+collections_dir: collections

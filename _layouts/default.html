@@ -1,0 +1,16 @@
+<!doctype html>
+{% include head.html %}
+<html lang="en">
+	<body>
+		<main class="wrap">
+		{% include header.html %}
+		{% include navigation.html %}
+		<div class = "w3-container w3-border w3-teal">
+			<p>{{ page.title }}</p>
+		</div>
+		
+		{{ content }}
+		</main>	
+		{% include footer.html %}
+	</body>
+</html>

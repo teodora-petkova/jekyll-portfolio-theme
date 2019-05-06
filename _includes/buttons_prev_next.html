@@ -1,0 +1,12 @@
+<div class="w3-section">
+	{% if page.previous.url %}
+		<a href="{{ site.baseurl }}{{ page.previous.url }}">
+			<button class="w3-button w3-green">< Prev</button>
+		</a>
+	{% endif %}	
+	{% if page.next.url %}
+		<a href="{{ site.baseurl }}{{ page.next.url }}">
+			<button class="w3-button w3-green">Next ></button>
+		</a>
+	{% endif %}
+</div>
