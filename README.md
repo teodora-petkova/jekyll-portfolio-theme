@@ -1,2 +1,2 @@
-# Jekyll-Portfolio-Theme
+# jekyll-portfolio-theme
 a sample project for testing Jekyll
